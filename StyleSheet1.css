@@ -14,7 +14,7 @@ margin-right: 300px;
 
 .plyta1
 {
-display: flex
+display: flex;
 justify-content: space-between;
 /*display: inline-block;*/
 /*background-color: red;*/
@@ -37,9 +37,18 @@ text-align: left;
 
 .tlo
 {
-display: flex
+display: flex;
 }
 
 .wykon {
-display: flex
+display: flex;
+}
+
+.linki {
+display: flex;
+}
+
+.poz2 {
+text-align: right;
+/*margin-right: 20px;*/
 }

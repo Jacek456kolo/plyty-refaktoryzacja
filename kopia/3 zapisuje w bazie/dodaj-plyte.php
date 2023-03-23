@@ -7,7 +7,6 @@ if(isset($_POST['no1']))
 echo $_POST['no1'];
 echo $_POST['no2'];
 echo $_POST['no3'];
-echo $_POST['no4'];
 }
 
 $link = mysqli_connect("127.0.0.1", "root", "", "baza1");
