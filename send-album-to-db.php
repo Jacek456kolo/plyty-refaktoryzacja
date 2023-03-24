@@ -2,6 +2,13 @@
 
 echo "hello world ";
 
+if ($_POST['no1']==="" || $_POST['no2']==="" || $_POST['no3']==="" || $_POST['no4']==="")
+{
+echo "Ktores pole puste";
+exit();
+}
+
+
 if(isset($_POST['no1']))
 {
 echo $_POST['no1'];
@@ -39,4 +46,7 @@ if(mysqli_query($link, $sql)){
 mysqli_close($link);
 
 
+header("HTTP/1.1 301 Moved Permanently");
+header("Location: show-all-albums.php");
+header('Connection: close');
 ?>
