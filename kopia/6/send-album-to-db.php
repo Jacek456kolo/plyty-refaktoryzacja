@@ -4,7 +4,7 @@ echo "hello world ";
 
 if ($_POST['no1']==="" || $_POST['no2']==="" || $_POST['no3']==="" || $_POST['no4']==="")
 {
-echo "Ktores pole jest puste";
+echo "Ktores pole puste";
 exit();
 }
 
@@ -38,10 +38,6 @@ $sql = "INSERT INTO plyty1 (url1, wykonawca, tytul, rok) VALUES ('" . $_POST['no
 
 if(mysqli_query($link, $sql)){
     echo "Records inserted successfully.";
-
-    header("HTTP/1.1 301 Moved Permanently");
-    header("Location: show-all-albums.php");
-    header('Connection: close');
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
@@ -50,5 +46,7 @@ if(mysqli_query($link, $sql)){
 mysqli_close($link);
 
 
-
+header("HTTP/1.1 301 Moved Permanently");
+header("Location: show-all-albums.php");
+header('Connection: close');
 ?>

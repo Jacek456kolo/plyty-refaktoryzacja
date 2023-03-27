@@ -42,7 +42,7 @@ if (mysqli_num_rows($result) > 0) {
 	<div class="plyta1">
 		<div>
 			<a href="http://www.localhost/plyty-refaktoryzacja/plyta.php?name=<?php echo $row["wykonawca"] ?>">
-				<img src="<?php echo $row["url1"]?>" width="100px" height="100px">
+				<img src="<?php echo $row["url1"]?>" width="100px"; height="100px">
 			</a>
 		</div>
 		<div>
