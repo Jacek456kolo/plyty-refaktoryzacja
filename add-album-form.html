@@ -2,7 +2,7 @@
 
 <div class="tlo"></div>
 
-<form action="send-album-to-db.php" method="post">
+<form action="b2.php" method="post" enctype="multipart/form-data">
     <div class="wykon">Wykonawca
         <input type="text" name="no1" class="no1" value="">
     </div>
@@ -24,18 +24,15 @@
         <input type="submit" name="submit1" id="submit1" value="Przeslij">
     </div>
 
+    <input type="file" name="submit2" id="submit2">
+
 
 </form>
 
 <div>
-    <input type="file" name="submit2" id="submit2" value="Upload">
+
 </div>
 
-<label for="avatar">Choose a profile picture:</label>
 
-<input type="file"
-       id="avatar" name="avatar"
-       accept="image/png, image/jpeg"
-       data-buttonText="upload">
 
 </body>
