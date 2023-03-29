@@ -1,0 +1,13 @@
+nie
+http://www.localhost/plyty-refaktoryzacja/uploads/okladki/url1
+--
+nie
+C:\users\rozowy\jacekprojekty\plyty-refaktoryzacja\uploads\okladki\url1
+--
+tak
+uploads\okladki\
+--
+tak
+/plyty-refaktoryzacja/uploads\okladki\
+--
+http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=baza1&table=plyty1

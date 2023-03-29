@@ -40,7 +40,7 @@ if (mysqli_num_rows($result) > 0) {
 	
 <div class="ramka">
 				<div class="plyta1">
-					<div><img src="<?php echo $row["url1"]?>"></div>
+					<div><img src="uploads\okladki\<?php echo $row["url1"]?>"></div>
 					<div>
 						<div class="pl1"><?php echo $row["wykonawca"]?></div>
 						<div class="pl2"><?php echo $row["tytul"]?></div>
