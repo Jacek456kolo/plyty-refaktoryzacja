@@ -1,5 +1,15 @@
 <body>
 
+<?php
+if(isset($_POST['haverrors']))
+{
+?>
+    <p>Zle wypelnione</p>
+
+<?php
+}
+?>
+
 <div class="tlo"></div>
 
 <form action="send-album-to-db.php" method="post" enctype="multipart/form-data">
