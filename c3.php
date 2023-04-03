@@ -1,11 +1,13 @@
 <?php
 
-$k1='';
 
-$input = fopen('test.txt', "r");
-$output = fopen('test-o.txt', "w");
+//$input = fopen('test.txt', "r");
+//$output = fopen('test-o.txt', "w");
 
-//$stdin="1 2 3";
+$input = fopen('php://stdin', "r");
+$output = fopen('php://stdout', "w");
+
+$stdin="1 2 3";
 
 //fread($input, "10");
 //echo $input;
@@ -19,11 +21,11 @@ echo $numbers;
 <br>
 
 <?php
-echo strrev($numbers);
 
-echo $k1;
+$kl1=strrev($numbers);
+echo $kl1;
 
-fwrite($output, $k1);
+fwrite($output, $kl1);
 
 fclose($input);
 fclose($output);
