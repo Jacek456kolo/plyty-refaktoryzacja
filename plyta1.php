@@ -13,7 +13,7 @@ $dbname = "baza1";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+  die("Connection failed: " . mysqli_connect_error());
 }
 
 #$sql = "SELECT id, url1, wykonawca, tytul, rok FROM plyty1 WHERE wykonawca=albatros";
@@ -25,32 +25,32 @@ $sql = "SELECT id, url1, wykonawca, tytul, rok FROM plyty1 WHERE wykonawca='" . 
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result)) {
 //    echo "id: " . $row["id"]. " - nr: " . $row["url1"]. " wykonawca: " . //$row["wykonawca"]. " tytul: " . $row["tytul"]. " rok: " .
 //$row["rok"]."<br>";
 
-        ?>
+?>
 
-        <?php
-
-        if ($row["wykonawca"]===$_GET["name"])
-        {
-            ?>
-
-            <div class="ramka">
-                <div class="plyta1">
-                    <div><img src="uploads\okladki\<?php echo $row["url1"]?>"></div>
-                    <div>
-                        <div class="pl1"><?php echo $row["wykonawca"]?></div>
-                        <div class="pl2"><?php echo $row["tytul"]?></div>
-                        <div class="pl3"><?php echo $row["rok"]?></div>
-                    </div>
-
-                </div>
-            </div>
-            <?php
-        }
-    }
-}
+<?php
+	
+		if ($row["wykonawca"]===$_GET["name"])
+		{	
+	?>
+	
+<div class="ramka">
+				<div class="plyta1">
+					<div><img src="uploads\okladki\<?php echo $row["url1"]?>"></div>
+					<div>
+						<div class="pl1"><?php echo $row["wykonawca"]?></div>
+						<div class="pl2"><?php echo $row["tytul"]?></div>
+						<div class="pl3"><?php echo $row["rok"]?></div>
+					</div>
+					
+				</div>
+			</div>
+	<?php
+				}
+			}
+		}
 ?>

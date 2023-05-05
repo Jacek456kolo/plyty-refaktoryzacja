@@ -1,0 +1,78 @@
+- uruchomic apache i mysql
+--
+- http://konkretny.pl/jak-korzystac-z-gita-poradnik.html
+--
+- commit status
+- commit add .
+--
+https://how2html.pl/css-podstawy/
+--
+<img src="logo1.jpg">
+--
+<div id="logo"> <a href="http://www.gdata.pl"><img src="logo2.jpg"></a></div>
+<div id="naglowek"> <a href="http://www.gdata.pl">CERTYFIKAT</a></div>
+--
+https://www.kurshtml.edu.pl/css/wyswietlanie,pozycjonowanie.html
+--
+github
+email:
+projekt@ceti.com.pl
+pass:
+123hgith
+username:
+Jacek456kolo
+--
+repository:
+repo123
+--
+https://github.com/Jacek456kolo/repo123
+ssh (nie https):
+git@github.com:Jacek456kolo/repo123.git
+--
+key public:
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDP5rfBFFWxBrOPRVPQoTEwMZhtxOEjbPct9p9vU4mO9PRXEsNwRmp2lbVBA+o2vuYYCUp9M+9xtHEMM3ADrc0lI5rVUMR2KawXK7F7+z7+qUD9zq4IHjIZVO5oYb9sOOdiD52WghQfE3zsZ+1Mtlv3y0oqPGmKbNSTO3NS73RdCcGXDPPNkRWdVTb3jK9QbQmqUjS692UynaeJ0d4w+ALjr10N4c+HKPGPYKXRGn7hiLHlmUiluuVb/sjAeKZhfucTs6bPLZYIcMossphoH7S88X/kMM+egCpLyxlsWP9Er2QiWwINHeS6vRGHL1bezaY//9yStKkI1l7o41gd5JB7 rsa-key-20230306
+key fingerprint:
+ssh-rsa 2048 SHA256:7kKZFfnpfTmMovf0qflhGMww4Obc7BGXmlduPEfV/w0
+key comment:
+rsa-key-20230306
+key passphrase:
+pass789
+--
+git remote add remote-repo git@github.com:Jacek456kolo/repo123.git
+--
+prawym klawiszem:
+git bash here
+ssh-keygen
+4x ENTER
+w C:\Users\Jacek\.ssh pojawia sie: id_rsa i id_rsa.pub
+w github:
+ikonka (z prawej str.) ustawienia\settings
+wiersz (po lewej): SSH and GPG keys
+u gory SSH keys
+przycisk: New SSH keys
+wkleic klucz publiczny
+przycisk: Add SSH
+--
+wysyla pliki do chmury:
+git push --set-upstream remote-repo master
+--
+git status
+git add .
+git status
+git commit -m nazwa-dorywcza
+git status
+--
+nowe repository:
+git init
+git status
+git add .
+git status
+git remote add remote-repo git@github.com:Jacek456kolo/kalkulator.git
+git status
+jak nie chce dzialac podac klucz (haslo dla github'a)
+git push --set-upstream remote-repo master
+--
+strona github
+przycisk (po lewej): New
+--
+print_r($_POST);

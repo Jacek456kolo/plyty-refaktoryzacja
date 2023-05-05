@@ -1,0 +1,5 @@
+https://webref.pl/arena/html/html_ref_tag_table.html
+--
+https://phpkurs.pl/operacje-na-plikach/
+--
+http://localhost/phpmyadmin/

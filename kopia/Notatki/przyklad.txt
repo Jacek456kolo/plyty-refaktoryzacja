@@ -1,0 +1,1 @@
+INSERT INTO plyty1 (url1, wykonawca, tytul, rok) VALUES ('wykon','tyt','rok','')

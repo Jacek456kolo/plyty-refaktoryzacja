@@ -1,0 +1,15 @@
+www: phpmyadmin
+--
+https://www.tutorialrepublic.com/php-tutorial/php-mysql-insert-query.php
+--
+DELETE FROM products WHERE product_id=1;
+- products to nazwa tabeli
+DELETE FROM products WHERE first_name=nazwa 1-o rekordu;
+--
+http://127.0.0.1/phpmyadmin/sql.php?db=baza1&table=plyty1&pos=0
+--
+http://localhost/plyty/plyta.php?name=totto
+--
+proba:
+<a href="http://www.localhost/plyty/plyta($row["url1"], $row["wykonawca"], $row["tytul"], $row["rok"])">
+http://www.localhost/plyty/plyta.php?name=albatross

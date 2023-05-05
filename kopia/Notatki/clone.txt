@@ -1,0 +1,9 @@
+git clone https://github.com/Jacek456kolo/plyty12
+--
+remote (po utworzeniu nowego repository) w gitkraken
+--
+skopiowac .gitignore
+git ignore w programie gitignore
+--
+git init
+jak nie ma jeszcze repozytorium

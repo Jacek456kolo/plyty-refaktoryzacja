@@ -18,12 +18,16 @@ function listDir($dir)
     $dir=substr($dir, 0, $count-1);
     }
     }
+
     while (($file=readdir($fd)) !== false){
     if($file==".") continue;
+
     if(is_dir($dir. "/". $file)) {
         $path = urlencode($dir. "/". $file);
-        $link = "<a href=\"index.php?>";
+        $link = "<a href=\"z26.php?";
+
     $link .= "dir=$path\">$file</a>\n";
+    $skrot=$link;
     echo $link;
     }
     else {
@@ -34,6 +38,7 @@ function listDir($dir)
     closedir($fd);
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,16 +46,35 @@ function listDir($dir)
 <title>Nawigacja po katalogach</title>
 </head>
 <body>
+
 <div>
+
 <?php
+$skrot="";
+
     if(isSet($_GET['dir'])){
     $dir=$_GET['dir'];
-}
-    else{
-        $dir='/';
+
+  }
+    else {
+        $dir = "/";
     }
+
     if($dir=='') $dir="/";
     listDir($dir);
+
+
+//    for($i1=0; $i1>=0; $i1++){
+//        if(isSet($_GET['dir'])) listDir($link);
+//    }
+
+//echo ("aaa $skrot bbb");
+
+//listDir("/intel");
+//listDir("/program files");
+//listDir($skrot);
+
+
     ?>
 </div>
 </body>
