@@ -4,11 +4,6 @@
 //Checking weather it is a valid request or not
 if(isset($_POST['submit'])) {
 
-
-
-
-
-
     //Taking the files from input
     $file = $_FILES['okladka'];
     //Getting the file name of the uploaded file
@@ -21,13 +16,16 @@ if(isset($_POST['submit'])) {
     $fileError = $_FILES['okladka']['error'];
     //Getting the file type of the uploaded file
     $fileType = $_FILES['okladka']['type'];
+//print_r($fileTempName);
+//    print_r($_FILES['okladka']['type']);
 
     $i = rand();
 
     move_uploaded_file($fileTempName, "uploads/okladki/" . md5($i) . ".jpg");
 
-
-     //print_r($_FILES);
+// print_r(md5($i));
+//  echo "<br>";
+//print_r($_FILES);
 
     //echo "hello world ";
 
@@ -65,7 +63,9 @@ if(isset($_POST['submit'])) {
 //INSERT INTO plyty1 (url1, wykonawca, tytul, rok) VALUES ('wykon','tyt','rok','')
 
     $sql = "INSERT INTO plyty1 (url1, wykonawca, tytul, rok) VALUES ('" . $fileTempName . "','" . $_POST['no1'] . "','" . $_POST['no2'] . "','" . $_POST['no3'] . "')";
-
+//print_r($fileTempName);
+//    print_r($sql);
+//exit();
 
     if (mysqli_query($link, $sql)) {
         echo "Records inserted successfully.";
